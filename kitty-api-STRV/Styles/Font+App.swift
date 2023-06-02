@@ -9,21 +9,11 @@ import SwiftUI
 
 // MARK: - SwiftUI
 extension Font {
-  static func clashDisplayVariableBoldSemibold(ofSize size: CGFloat, relativeTo textStyle: Font.TextStyle) -> Font {
-    .custom("ClashDisplayVariable-Bold_Semibold", size: size, relativeTo: textStyle)
-  }
+  static let appTextXL: Font = .system(size: 24, weight: .bold)
   
-  static func satoshiVariableBoldBold(ofSize size: CGFloat, relativeTo textStyle: Font.TextStyle) -> Font {
-    .custom("SatoshiVariable-Bold_Bold", size: size, relativeTo: textStyle)
-  }
-}
-
-extension Font {
-  static let appSectionTitle = clashDisplayVariableBoldSemibold(ofSize: 18, relativeTo: .title)
-  
-  static let appItemLargeTitle = clashDisplayVariableBoldSemibold(ofSize: 18, relativeTo: .title)
-  static let appItemSmallTitle = clashDisplayVariableBoldSemibold(ofSize: 13, relativeTo: .title)
-  static let appItemDescription = clashDisplayVariableBoldSemibold(ofSize: 13, relativeTo: .body)
+  static let appTextLG: Font = .system(size: 20, weight: .medium)
+  static let appTextBase: Font = .system(size: 16, weight: .regular)
+  static let appTextSM: Font = .system(size: 14, weight: .regular)
 }
 
 // MARK: - UIKit

@@ -16,14 +16,11 @@ extension Color {
   static let appTextBody = Color("Colors/Text/Body")
   static let appTextSectionTitle = Color("Colors/Text/Section Title")
   static let appTextItemTitle = Color(uiColor: .appTextItemTitle)
-  static let appTextNavigationBar = Color(uiColor: .appTextNavigationBar)
 }
 
 // MARK: - UIKit
 extension UIColor {
   static let appBackgroundTabBar = UIColor(named: "Colors/Background/Tab Bar")!
-  static let appBackgroundSegmentedControlGeneral = UIColor(named: "Colors/Background/Segmented Control/General")!
-  static let appBackgroundSegmentedControlSelected = UIColor(named: "Colors/Background/Segmented Control/Selected")!
   
   static let appTextNavigationBar = UIColor(named: "Colors/Text/Navigation Bar")!
   

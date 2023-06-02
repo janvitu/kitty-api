@@ -6,13 +6,15 @@
 //
 
 import SwiftUI
+import SafariServices
 
 struct BreedDetailView: View {
   let breed: Breed
   
+  @State private var isPresentingModal = false
+  
   var body: some View {
     ZStack(alignment: .topLeading) {
-      BackgroundGradientView()
       ScrollView{
         VStack(alignment: .leading, spacing: 16) {
           makeInfo(breed: breed)
@@ -21,46 +23,46 @@ struct BreedDetailView: View {
         .padding(.vertical, 16)
       }
     }
-    .navigationTitle(breed.name)
-    
   }
 }
 
 private extension BreedDetailView {
   func makeInfo(breed: Breed) -> some View {
     VStack(alignment: .leading, spacing: 8) {
-      Text("Info")
-        .font(.appSectionTitle)
+      Text("Breed: \(breed.name)")
+        .font(.system(size: 20, weight: .bold))
         .foregroundColor(.appTextSectionTitle)
-      
-      makeInfoRow(title: breed.name, iconName: "info.circle")
-      makeInfoRow(title: breed.description, iconName: "film")
+      if let img = breed.image {
+        AsyncImage(url: URL(string: img.url)) { image in
+          image
+            .resizable()
+            .cornerRadius(4)
+            .aspectRatio(contentMode: .fit)
+        } placeholder: {
+          ProgressView()
+        }
+      }
       VStack(alignment: .leading) {
         Text(breed.description)
-          .font(.appSectionTitle)
-          .foregroundColor(.appTextSectionTitle)
-          .padding(.horizontal, 8)
           .padding(.vertical, 8)
-        
+          .foregroundColor(.appTextSectionTitle)
       }
-    }.toolbar {
+    }
+    .toolbar {
       ToolbarItem(placement: .navigationBarTrailing) {
-        if let url = breed.wikipedia_url {
-          ShareLink(item: url)
+        if let url = URL(string: breed.wikipedia_url!) {
+          Button("wiki") {
+            isPresentingModal = true
+          }.sheet(isPresented: $isPresentingModal) {
+            SafariView(url: url)
+          }
         }
       }
     }
   }
   
-  func makeInfoRow(title: String, iconName: String) -> some View {
-    HStack(alignment: .top, spacing: 8) {
-      Image(systemName: iconName)
-      
-      Text(title)
-    }
-    .font(.appItemDescription)
-    .foregroundColor(.appTextBody)
-  }
+  
 }
+
 
 

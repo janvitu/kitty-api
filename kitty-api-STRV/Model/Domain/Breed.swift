@@ -18,7 +18,7 @@ struct Breed {
   let name: String
   let description: String
   let child_friendly: Int
-  var wikipedia_url: String? = nil
+  let wikipedia_url: String?
   let image: Image?
 }
 

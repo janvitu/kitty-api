@@ -12,19 +12,27 @@ struct BreedsListItemView: View {
   
   
   var body: some View {
-    VStack(alignment: .leading, spacing: 16) {
-      
+    VStack(alignment: .leading) {
+      if let img = breed.image {
+        AsyncImage(url: URL(string: img.url)) { image in
+          image
+            .resizable()
+            .cornerRadius(8)
+            .aspectRatio(contentMode: .fit)
+        } placeholder: {
+          ProgressView()
+        }
+      }
       Text(breed.name)
-        .font(.appItemLargeTitle)
+        .font(.appTextXL)
         .foregroundColor(.appTextItemTitle)
       Text("\(breed.description)")
-        .font(.appItemDescription)
+        .font(.appTextBase)
+        .foregroundColor(.appTextBody)
         .multilineTextAlignment(.leading)
     }
     .padding(16)
     .frame(maxWidth: .infinity, alignment: .leading)
-    .background(Color.appBackgroundItem)
-    .clipShape(RoundedRectangle(cornerRadius: 8))
   }
 }
 

@@ -67,9 +67,6 @@ private extension kitty_api_STRVApp {
   }
   
   func setupSegmentedControlAppearance() {
-    UISegmentedControl.appearance().backgroundColor = .appBackgroundSegmentedControlGeneral
-    UISegmentedControl.appearance().selectedSegmentTintColor = .appBackgroundSegmentedControlSelected
-    
     UISegmentedControl.appearance().setTitleTextAttributes(
       [.foregroundColor: UIColor.appTextItemTitleInverse],
       for: .normal

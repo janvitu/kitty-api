@@ -8,12 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1430553D2A28D16000291417 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1430553C2A28D16000291417 /* Logger.swift */; };
-		1430554A2A28E57300291417 /* BackgroundGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143055492A28E57300291417 /* BackgroundGradientView.swift */; };
 		1430554E2A28E62A00291417 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1430554D2A28E62A00291417 /* ContentView.swift */; };
 		143055502A28E88100291417 /* BreedsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1430554F2A28E88100291417 /* BreedsListView.swift */; };
 		143055522A28E9D200291417 /* BreedsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143055512A28E9D200291417 /* BreedsListViewModel.swift */; };
 		143055552A28EB2100291417 /* BreedDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143055542A28EB2100291417 /* BreedDetailView.swift */; };
-		143055572A28EB2B00291417 /* BreedDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143055562A28EB2B00291417 /* BreedDetailViewModel.swift */; };
 		143055592A28FBCA00291417 /* BreedsListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143055582A28FBCA00291417 /* BreedsListItemView.swift */; };
 		14352BFB2A28899B00840AD3 /* Font+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14352BFA2A28899B00840AD3 /* Font+App.swift */; };
 		14352BFD2A2889E300840AD3 /* Color+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14352BFC2A2889E300840AD3 /* Color+App.swift */; };
@@ -34,19 +32,16 @@
 		146BB0CC2A29EF6E0072A24D /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146BB0CB2A29EF6E0072A24D /* Response.swift */; };
 		149476B82A2A14A2004690D6 /* UINavigationController+BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149476B72A2A14A2004690D6 /* UINavigationController+BackButton.swift */; };
 		149476BA2A2A29C6004690D6 /* OnFirstAppearViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149476B92A2A29C6004690D6 /* OnFirstAppearViewModifier.swift */; };
+		149476BF2A2A6279004690D6 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149476BE2A2A6279004690D6 /* SafariView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1430553C2A28D16000291417 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
-		143055402A28D1C500291417 /* ClashDisplay.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ClashDisplay.ttf; sourceTree = "<group>"; };
-		143055412A28D1C500291417 /* Satoshi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Satoshi.ttf; sourceTree = "<group>"; };
 		143055482A28D8FE00291417 /* kitty-api-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "kitty-api-Info.plist"; sourceTree = "<group>"; };
-		143055492A28E57300291417 /* BackgroundGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundGradientView.swift; sourceTree = "<group>"; };
 		1430554D2A28E62A00291417 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1430554F2A28E88100291417 /* BreedsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsListView.swift; sourceTree = "<group>"; };
 		143055512A28E9D200291417 /* BreedsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsListViewModel.swift; sourceTree = "<group>"; };
 		143055542A28EB2100291417 /* BreedDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedDetailView.swift; sourceTree = "<group>"; };
-		143055562A28EB2B00291417 /* BreedDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedDetailViewModel.swift; sourceTree = "<group>"; };
 		143055582A28FBCA00291417 /* BreedsListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsListItemView.swift; sourceTree = "<group>"; };
 		14352BFA2A28899B00840AD3 /* Font+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+App.swift"; sourceTree = "<group>"; };
 		14352BFC2A2889E300840AD3 /* Color+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+App.swift"; sourceTree = "<group>"; };
@@ -68,6 +63,7 @@
 		146BB0CB2A29EF6E0072A24D /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		149476B72A2A14A2004690D6 /* UINavigationController+BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+BackButton.swift"; sourceTree = "<group>"; };
 		149476B92A2A29C6004690D6 /* OnFirstAppearViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnFirstAppearViewModifier.swift; sourceTree = "<group>"; };
+		149476BE2A2A6279004690D6 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,18 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				144095B72A28836F00BC95DA /* Assets.xcassets */,
-				1430553F2A28D1AA00291417 /* Fonts */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		1430553F2A28D1AA00291417 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				143055402A28D1C500291417 /* ClashDisplay.ttf */,
-				143055412A28D1C500291417 /* Satoshi.ttf */,
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 		1430554B2A28E5A600291417 /* Scenes */ = {
@@ -131,7 +117,6 @@
 			isa = PBXGroup;
 			children = (
 				143055542A28EB2100291417 /* BreedDetailView.swift */,
-				143055562A28EB2B00291417 /* BreedDetailViewModel.swift */,
 			);
 			path = "Breed Detail";
 			sourceTree = "<group>";
@@ -192,7 +177,7 @@
 		144095B22A28836E00BC95DA /* kitty-api-STRV */ = {
 			isa = PBXGroup;
 			children = (
-				149476B62A2A148C004690D6 /* Utilities */,
+				149476BD2A2A6263004690D6 /* Views */,
 				146BB0AD2A291CD20072A24D /* API */,
 				144095C32A28861B00BC95DA /* App */,
 				146BB0C82A29DED60072A24D /* DI */,
@@ -200,8 +185,8 @@
 				1430553B2A28D15400291417 /* Logger */,
 				14352C0F2A28C2E800840AD3 /* Model */,
 				14352BF92A28895D00840AD3 /* Styles */,
-				144095C42A2887A400BC95DA /* Views */,
 				1430553E2A28D19F00291417 /* Resources */,
+				149476B62A2A148C004690D6 /* Utilities */,
 				144095B92A28836F00BC95DA /* Preview Content */,
 			);
 			path = "kitty-api-STRV";
@@ -221,14 +206,6 @@
 				144095B32A28836E00BC95DA /* kitty_api_STRVApp.swift */,
 			);
 			path = App;
-			sourceTree = "<group>";
-		};
-		144095C42A2887A400BC95DA /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				143055492A28E57300291417 /* BackgroundGradientView.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		146BB0AD2A291CD20072A24D /* API */ = {
@@ -268,6 +245,14 @@
 				149476B92A2A29C6004690D6 /* OnFirstAppearViewModifier.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		149476BD2A2A6263004690D6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				149476BE2A2A6279004690D6 /* SafariView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,12 +339,11 @@
 				14352C142A28CA0E00840AD3 /* PaginationInfo.swift in Sources */,
 				143055522A28E9D200291417 /* BreedsListViewModel.swift in Sources */,
 				146BB0CA2A29DEE30072A24D /* DIContainer.swift in Sources */,
-				143055572A28EB2B00291417 /* BreedDetailViewModel.swift in Sources */,
 				143055552A28EB2100291417 /* BreedDetailView.swift in Sources */,
 				146BB0C42A29DB470072A24D /* APIError.swift in Sources */,
 				143055592A28FBCA00291417 /* BreedsListItemView.swift in Sources */,
 				146BB0C02A29D9130072A24D /* HTTPMethod.swift in Sources */,
-				1430554A2A28E57300291417 /* BackgroundGradientView.swift in Sources */,
+				149476BF2A2A6279004690D6 /* SafariView.swift in Sources */,
 				146BB0BE2A29D8D20072A24D /* Endpoint.swift in Sources */,
 				149476B82A2A14A2004690D6 /* UINavigationController+BackButton.swift in Sources */,
 				146BB0CC2A29EF6E0072A24D /* Response.swift in Sources */,
