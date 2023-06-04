@@ -27,7 +27,7 @@ struct BreedsListItemView: View {
         .font(.appTextXL)
         .foregroundColor(.appTextItemTitle)
       Text("\(breed.description)")
-        .font(.appTextBase)
+        .font(.appTextBaseRegular)
         .foregroundColor(.appTextBody)
         .multilineTextAlignment(.leading)
     }

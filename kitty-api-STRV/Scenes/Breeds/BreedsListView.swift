@@ -37,7 +37,8 @@ struct BreedsListView: View {
             NavigationLink(destination: BreedDetailView(breed: breed)) {
               BreedsListItemView(breed: breed)
             }
-          }.overlay(Divider().background(.black), alignment: .top)
+          }
+          .overlay(Divider().background(.black), alignment: .bottom)
         }
       }
     }
