@@ -22,16 +22,35 @@ struct Breed {
   let wikipedia_url: String?
   let image: Image?
   // characteristics
-  let adaptability: Int
-  let child_friendly: Int
-  let dog_friendly: Int
-  let energy_level: Int
-  let health_issues: Int
-  let intelligence: Int
-  let shedding_level: Int
-  let social_needs: Int
-  let stranger_friendly: Int
-  let vocalisation: Int
+  private let adaptability: Int
+  private let child_friendly: Int
+  private let dog_friendly: Int
+  private let energy_level: Int
+  private let health_issues: Int
+  private let intelligence: Int
+  private let shedding_level: Int
+  private let social_needs: Int
+  private let stranger_friendly: Int
+  private let vocalisation: Int
+  
+  struct Characteristic: Hashable {
+    let description: String
+    let level: Int
+  }
+  var characteristics: [Characteristic] {
+    return [
+      Characteristic(description: "Adaptability", level: adaptability),
+      Characteristic(description: "Child friendly", level: child_friendly),
+      Characteristic(description: "Dog friendly", level: dog_friendly),
+      Characteristic(description: "Energy", level: energy_level),
+      Characteristic(description: "Health issues", level: health_issues),
+      Characteristic(description: "Intelligence", level: intelligence),
+      Characteristic(description: "Shedding", level: shedding_level),
+      Characteristic(description: "Social needs", level: social_needs),
+      Characteristic(description: "Stranger friendly", level: stranger_friendly),
+      Characteristic(description: "Vocalisation", level: vocalisation)
+    ]
+  }
 }
 
 // MARK: - Conformances

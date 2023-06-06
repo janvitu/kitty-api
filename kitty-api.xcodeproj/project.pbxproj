@@ -16,8 +16,6 @@
 		14352BFB2A28899B00840AD3 /* Font+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14352BFA2A28899B00840AD3 /* Font+App.swift */; };
 		14352BFD2A2889E300840AD3 /* Color+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14352BFC2A2889E300840AD3 /* Color+App.swift */; };
 		14352C112A28C2FB00840AD3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14352C102A28C2FB00840AD3 /* Constants.swift */; };
-		14352C142A28CA0E00840AD3 /* PaginationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14352C132A28CA0E00840AD3 /* PaginationInfo.swift */; };
-		14352C162A28CA1C00840AD3 /* PaginatedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14352C152A28CA1C00840AD3 /* PaginatedResponse.swift */; };
 		14352C192A28CA7F00840AD3 /* Breed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14352C182A28CA7F00840AD3 /* Breed.swift */; };
 		144095B42A28836E00BC95DA /* kitty_api_STRVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144095B32A28836E00BC95DA /* kitty_api_STRVApp.swift */; };
 		144095B82A28836F00BC95DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 144095B72A28836F00BC95DA /* Assets.xcassets */; };
@@ -29,7 +27,6 @@
 		146BB0C42A29DB470072A24D /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146BB0C32A29DB470072A24D /* APIError.swift */; };
 		146BB0C62A29DBFF0072A24D /* BreedEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146BB0C52A29DBFF0072A24D /* BreedEndpoint.swift */; };
 		146BB0CA2A29DEE30072A24D /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146BB0C92A29DEE30072A24D /* DIContainer.swift */; };
-		146BB0CC2A29EF6E0072A24D /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146BB0CB2A29EF6E0072A24D /* Response.swift */; };
 		149476B82A2A14A2004690D6 /* UINavigationController+BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149476B72A2A14A2004690D6 /* UINavigationController+BackButton.swift */; };
 		149476BA2A2A29C6004690D6 /* OnFirstAppearViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149476B92A2A29C6004690D6 /* OnFirstAppearViewModifier.swift */; };
 		149476BF2A2A6279004690D6 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149476BE2A2A6279004690D6 /* SafariView.swift */; };
@@ -46,8 +43,6 @@
 		14352BFA2A28899B00840AD3 /* Font+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+App.swift"; sourceTree = "<group>"; };
 		14352BFC2A2889E300840AD3 /* Color+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+App.swift"; sourceTree = "<group>"; };
 		14352C102A28C2FB00840AD3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		14352C132A28CA0E00840AD3 /* PaginationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationInfo.swift; sourceTree = "<group>"; };
-		14352C152A28CA1C00840AD3 /* PaginatedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginatedResponse.swift; sourceTree = "<group>"; };
 		14352C182A28CA7F00840AD3 /* Breed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breed.swift; sourceTree = "<group>"; };
 		144095B02A28836E00BC95DA /* kitty-api.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kitty-api.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		144095B32A28836E00BC95DA /* kitty_api_STRVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kitty_api_STRVApp.swift; sourceTree = "<group>"; };
@@ -60,7 +55,6 @@
 		146BB0C32A29DB470072A24D /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		146BB0C52A29DBFF0072A24D /* BreedEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedEndpoint.swift; sourceTree = "<group>"; };
 		146BB0C92A29DEE30072A24D /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
-		146BB0CB2A29EF6E0072A24D /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		149476B72A2A14A2004690D6 /* UINavigationController+BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+BackButton.swift"; sourceTree = "<group>"; };
 		149476B92A2A29C6004690D6 /* OnFirstAppearViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnFirstAppearViewModifier.swift; sourceTree = "<group>"; };
 		149476BE2A2A6279004690D6 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
@@ -134,19 +128,9 @@
 			isa = PBXGroup;
 			children = (
 				14352C172A28CA6300840AD3 /* Domain */,
-				14352C122A28C9F400840AD3 /* Response */,
 				14352C102A28C2FB00840AD3 /* Constants.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		14352C122A28C9F400840AD3 /* Response */ = {
-			isa = PBXGroup;
-			children = (
-				14352C152A28CA1C00840AD3 /* PaginatedResponse.swift */,
-				14352C132A28CA0E00840AD3 /* PaginationInfo.swift */,
-			);
-			path = Response;
 			sourceTree = "<group>";
 		};
 		14352C172A28CA6300840AD3 /* Domain */ = {
@@ -177,9 +161,8 @@
 		144095B22A28836E00BC95DA /* kitty-api-STRV */ = {
 			isa = PBXGroup;
 			children = (
-				149476BD2A2A6263004690D6 /* Views */,
-				146BB0AD2A291CD20072A24D /* API */,
 				144095C32A28861B00BC95DA /* App */,
+				146BB0AD2A291CD20072A24D /* API */,
 				146BB0C82A29DED60072A24D /* DI */,
 				1430554B2A28E5A600291417 /* Scenes */,
 				1430553B2A28D15400291417 /* Logger */,
@@ -187,6 +170,7 @@
 				14352BF92A28895D00840AD3 /* Styles */,
 				1430553E2A28D19F00291417 /* Resources */,
 				149476B62A2A148C004690D6 /* Utilities */,
+				149476BD2A2A6263004690D6 /* Views */,
 				144095B92A28836F00BC95DA /* Preview Content */,
 			);
 			path = "kitty-api-STRV";
@@ -214,7 +198,6 @@
 				146BB0C72A29DD0A0072A24D /* Endpoints */,
 				146BB0AE2A291CE10072A24D /* APIManager.swift */,
 				146BB0C32A29DB470072A24D /* APIError.swift */,
-				146BB0CB2A29EF6E0072A24D /* Response.swift */,
 				146BB0BD2A29D8D20072A24D /* Endpoint.swift */,
 				146BB0C12A29DADF0072A24D /* HTTPHeader.swift */,
 				146BB0BF2A29D9130072A24D /* HTTPMethod.swift */,
@@ -331,12 +314,10 @@
 				14352BFB2A28899B00840AD3 /* Font+App.swift in Sources */,
 				1430554E2A28E62A00291417 /* ContentView.swift in Sources */,
 				14352BFD2A2889E300840AD3 /* Color+App.swift in Sources */,
-				14352C162A28CA1C00840AD3 /* PaginatedResponse.swift in Sources */,
 				1430553D2A28D16000291417 /* Logger.swift in Sources */,
 				14352C192A28CA7F00840AD3 /* Breed.swift in Sources */,
 				146BB0C62A29DBFF0072A24D /* BreedEndpoint.swift in Sources */,
 				144095B42A28836E00BC95DA /* kitty_api_STRVApp.swift in Sources */,
-				14352C142A28CA0E00840AD3 /* PaginationInfo.swift in Sources */,
 				143055522A28E9D200291417 /* BreedsListViewModel.swift in Sources */,
 				146BB0CA2A29DEE30072A24D /* DIContainer.swift in Sources */,
 				143055552A28EB2100291417 /* BreedDetailView.swift in Sources */,
@@ -346,7 +327,6 @@
 				149476BF2A2A6279004690D6 /* SafariView.swift in Sources */,
 				146BB0BE2A29D8D20072A24D /* Endpoint.swift in Sources */,
 				149476B82A2A14A2004690D6 /* UINavigationController+BackButton.swift in Sources */,
-				146BB0CC2A29EF6E0072A24D /* Response.swift in Sources */,
 				146BB0C22A29DADF0072A24D /* HTTPHeader.swift in Sources */,
 				14352C112A28C2FB00840AD3 /* Constants.swift in Sources */,
 			);

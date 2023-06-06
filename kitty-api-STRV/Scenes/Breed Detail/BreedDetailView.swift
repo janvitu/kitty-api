@@ -13,12 +13,6 @@ struct BreedDetailView: View {
   
   @State private var isPresentingModal = false
   
-  let gridItems: [GridItem] = [
-    GridItem(.flexible(), spacing: 4),
-    GridItem(.flexible(), spacing: 4),
-    GridItem(.flexible(), spacing: 4)
-  ]
-  
   var body: some View {
     ZStack(alignment: .topLeading) {
       ScrollView{
@@ -94,43 +88,43 @@ private extension BreedDetailView {
   }
   
   func makeDetail(breed: Breed) -> some View {
-    LazyVGrid(columns: gridItems, spacing: 10) {
-        makeDetailIndicator(level: breed.adaptability, parameter: "Adaptability")
-        makeDetailIndicator(level: breed.child_friendly, parameter: "Child friendly")
-        makeDetailIndicator(level: breed.energy_level, parameter: "Energy level")
-        makeDetailIndicator(level: breed.health_issues, parameter: "Health issues")
-        makeDetailIndicator(level: breed.intelligence, parameter: "Intelligence")
-        makeDetailIndicator(level: breed.shedding_level, parameter: "Shedding level")
-      
-      makeDetailIndicator(level: breed.social_needs, parameter: "Social needs")
-      makeDetailIndicator(level: breed.stranger_friendly, parameter: "Stranger friendly")
-      makeDetailIndicator(level: breed.vocalisation, parameter: "vocalisation")
+    let numberOfColumns = 3
+    var gridItems: [GridItem] {
+      Array(repeating: .init(.flexible()), count: numberOfColumns)
+    }
+    
+    return LazyVGrid(columns: gridItems, alignment: .leading, spacing: 10 ) {
+      ForEach(breed.characteristics, id: \.self) { characteristic in
+        makeDetailItem(level: characteristic.level, parameter: characteristic.description)
       }
+    }
     .padding(.vertical, 8)
     .padding(.horizontal, 8)
   }
   
-  func makeDetailIndicator(level: Int, parameter: String) -> some View {
-    let maxLevel = 5
-    
+  func makeDetailItem(level: Int, parameter: String) -> some View {
     return VStack(alignment: .leading){
       Text(parameter)
         .font(.appTextSM)
         .foregroundColor(.appTextBody)
-      HStack(spacing: 6) {
-        ForEach(0..<level, id: \.self) { i in
-          Circle()
-            .stroke(lineWidth: 1)
-            .background(Circle().foregroundColor(.black))
-            .frame(width: 7, height: 7)
-        }
-        ForEach(0..<maxLevel-level, id: \.self) { i in
-          Circle()
-            .stroke(lineWidth: 1)
-            .background(.white)
-            .frame(width: 7, height: 7)
-          
-        }
+      makeDetailIndicator(level: level)
+    }
+  }
+  func makeDetailIndicator(level: Int) -> some View {
+    let maxLevel = 5
+    return HStack(spacing: 6) {
+      ForEach(0..<level, id: \.self) { i in
+        Circle()
+          .stroke(lineWidth: 1)
+          .background(Circle().foregroundColor(.black))
+          .frame(width: 7, height: 7)
+      }
+      ForEach(0..<maxLevel-level, id: \.self) { i in
+        Circle()
+          .stroke(lineWidth: 1)
+          .background(.white)
+          .frame(width: 7, height: 7)
+        
       }
     }
   }
